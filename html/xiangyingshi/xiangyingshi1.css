@@ -1,0 +1,237 @@
+body{
+	margin: 0;
+	padding:0;
+}
+
+html {
+font-size: 62.5%; /*10 ÷ 16 × 100% = 62.5%*/
+}
+
+#body{
+		width: 100%;
+		margin:0 auto;
+}
+
+#body #head{
+		width: 100%;
+		height: 50px;
+		background-color:rgb(0,0,0);
+		color: white;
+		text-align: center;
+		font-size: 1.6rem;
+		z-index: 1;
+	}
+#head .left{
+	width: 35%;
+	height: 100%;
+	float: left;
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	background-color: rgb(234,0,119);
+}
+
+#body #main{
+	width: 100%;
+	margin-top:-10px;
+	background-color: rgb(0,0,0);
+	color: white;
+	font-size: 2rem;
+}
+
+#main .big{
+	width: 100%;
+	float: left;
+}
+
+#main .small{
+	width: 100%;
+	float: left;
+}
+
+.small .pic_up{
+	width: 100%;
+	height: 450px;
+	background:url('2.jpg') 100%;
+	float: left;
+}
+
+.pic_up .pic{
+	width: 100%;
+	float: left;
+}
+.pic_up .words{
+	width: 100%;
+	height: 230px;
+	bottom: 0;
+	text-align: center;
+	float: left;
+	background-color: rgba(234,0,110,0.4);
+}
+
+.words span{
+	font-weight: bold;
+	font-size: 2.2rem;
+}
+.words a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	width: 30%;
+	margin: 0 auto;
+	font-size: 1.6rem;
+	text-align: center;
+	border:1px solid white ;
+}
+
+.words a:hover{
+	width: 50%;
+}
+.small .pic_down{
+	width: 100%;
+	height: 100%;
+	margin-top: -5px;
+	float: left;
+}
+
+.pic_down .holfone{
+	width: 100%;
+	height: 250px;
+	background: url('3.jpg') 100%;
+	float: left;
+}
+
+.pic_down .holftow{
+	width: 100%;
+	height: 250px;
+	background: url('4.jpg') 100%;
+	float: left;
+}
+
+.pic_down a{
+	display: block;
+	width: 110px;
+	height: 110px;
+	border-radius: 90deg;
+	color: white;
+	text-decoration: none;
+	text-align:center;
+	margin:0 auto;
+	background-color: rgba(154,201,26,0.8);
+}
+
+#body #end{
+	width: 100%;
+	height: 110px;
+	float: left;
+	background-color: rgb(34,34,34);
+}
+
+#end .input{
+	width: 90%;
+	margin-top: 10px;
+	margin-left:5%;
+	height: 25%;
+	float: left;
+	color: rgb(45,45,45);
+	text-align: center;
+}
+
+#end input{
+	border: 1px solid gray;
+	height: 80%;
+	width: 100%;
+	background-color: rgba(255,255,255,0.2)
+}
+
+#end .a{
+	width: 100%;
+	height: 40%;
+	border-top: 0.5px solid gray;
+	margin-top: 10px;
+	float: left;
+	text-align: center;
+}
+#end a{
+	color: rgb(136,136,136);
+	text-decoration: none;
+}
+
+#end a:hover{
+	color: white;
+	font-weight: bold;
+}
+
+
+@media  screen  and (min-width: 480px) {
+
+.pic_down a{
+	margin-top: 12%;
+}
+
+}
+
+@media  screen  and (min-width: 640px) {
+
+#body #main{
+	float: left;
+}
+
+.pic_down a{
+	margin-top: 10%;
+}
+#main .big{
+	width: 65%;
+	float: left;
+}
+
+#main .small{
+	width: 35%;
+	float: left;
+}
+#body #end{
+	bottom: 0;
+	position: fixed;
+}
+
+}
+
+@media  screen  and (min-width: 1007px){
+
+#main .big{
+	width: 50%;
+	float: left;
+}
+
+#main .small{
+	width: 50%;
+	float: left;
+}
+
+.small .pic_up{
+	width: 50%;
+	float: left;
+}
+
+.pic_up .words{
+	width: 100%;
+	height: 100%;
+	padding-top: 80px;
+	margin-left: 100%;
+	float: left;
+}
+
+.pic_down .holfone{
+	width: 50%;
+	height: 450px;
+}
+
+.pic_down .holftow{
+	width: 50%;
+	height: 450px;
+}
+
+#body #end{
+	position: relative;
+}
+}
